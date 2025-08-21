@@ -3,7 +3,7 @@ import {notFound} from 'next/navigation';
 import {routing} from '../../i18n/routing';
 import type { Metadata } from "next";
 import type { Author } from 'next/dist/lib/metadata/types/metadata-types';
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Josefin_Sans } from "next/font/google";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -16,10 +16,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const josefinSans = Josefin_Sans({
+  variable: "--font-josefin-sans",
+  subsets: ["latin"],
+})
+
 export const metadata: Metadata = {
   title: "Alberto Maserati",
   description: "Alberto Maserati, portfolio and personal information",
-  authors: { name: "Alberto Maserati", url: "https://www.linkedin.com/in/alberto-maserati/"}
+  authors: { name: "Alberto Maserati", url: "https://www.linkedin.com/in/alberto-maserati/"},
+  keywords: "alberto maserati, software, sviluppatore, developer, freelance, engineer, pavia, stradella, website, siti web net, azure,  code, html, css, c#, basket"
 };
 
 // export default function RootLayout({
@@ -43,7 +49,7 @@ export default async function LocaleLayout({
  
   return (
     <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${josefinSans.variable} antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
