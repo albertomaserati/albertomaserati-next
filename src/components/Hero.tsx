@@ -13,7 +13,7 @@ export default function Hero() {
     >
       <div className="max-w-3xl mx-auto text-center space-y-8">
         <div className="space-y-4">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-josefin bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-josefin bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             {t('title')}
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#portfolio"
-            className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors font-medium"
+            className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors font-medium"
           >
             {t('cta')}
           </a>

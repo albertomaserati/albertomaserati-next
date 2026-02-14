@@ -38,7 +38,7 @@ export default function Portfolio() {
             >
               {/* Project Image */}
               <div className="relative h-48 bg-gray-200 dark:bg-gray-800 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 opacity-80 flex items-center justify-center group-hover:opacity-90 transition-opacity">
+                <div className="w-full h-full bg-gradient-to-br from-primary to-secondary opacity-80 flex items-center justify-center group-hover:opacity-90 transition-opacity">
                   <span className="text-white font-josefin text-lg font-semibold">
                     {project.title}
                   </span>
@@ -60,7 +60,7 @@ export default function Portfolio() {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors font-medium text-sm"
+                    className="flex-1 inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors font-medium text-sm"
                   >
                     {t('viewDemo')}
                   </a>

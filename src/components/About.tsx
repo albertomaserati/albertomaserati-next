@@ -39,7 +39,7 @@ export default function About() {
 
             <a
               href="#"
-              className="inline-flex items-center px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors font-medium"
+              className="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors font-medium"
             >
               {t('downloadCV')}
             </a>
@@ -52,7 +52,7 @@ export default function About() {
                 key={index}
                 className="p-6 rounded-lg bg-white dark:bg-gray-900 shadow-lg hover:shadow-xl transition-shadow text-center"
               >
-                <div className="text-3xl sm:text-4xl font-bold font-josefin text-blue-600 dark:text-blue-400 mb-2">
+                <div className="text-3xl sm:text-4xl font-bold font-josefin text-primary mb-2">
                   {stat.count}
                 </div>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
