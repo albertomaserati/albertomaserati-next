@@ -1,0 +1,76 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  demo: string;
+  image: string;
+}
+
+export default function Projects() {
+  const t = useTranslations('Projects');
+  const projects = t.raw('projects') as Project[];
+
+  return (
+    <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="group rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-900 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+          >
+            {/* Project Image */}
+            <div className="relative h-56 bg-gray-200 dark:bg-gray-800 overflow-hidden">
+              {project.image ? (
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              ) : (
+                <div className="w-full h-full bg-gradient-to-br from-primary to-secondary opacity-80 flex items-center justify-center group-hover:opacity-90 transition-opacity">
+                  <span className="text-white font-josefin text-lg font-semibold">
+                    {project.title}
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {/* Project Info */}
+            <div className="p-6 space-y-4">
+              <h3 className="text-xl font-bold font-josefin text-foreground">
+                {project.title}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                {project.description}
+              </p>
+
+              {/* Action Buttons */}
+              <div className="flex gap-4 pt-4">
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors font-medium text-sm"
+                >
+                  {t('viewDemo')}
+                </a>
+                <a
+                  href="#"
+                  className="flex-1 inline-flex items-center justify-center px-4 py-2 rounded-lg border-2 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-medium text-sm"
+                >
+                  {t('viewDetails')}
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

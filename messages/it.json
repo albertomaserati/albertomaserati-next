@@ -32,7 +32,14 @@
   },
   "Portfolio": {
     "title": "Portfolio",
-    "subtitle": "Esplora il mio percorso attraverso progetti ed esperienza tecnica",
+    "subtitle": "Esplora il mio percorso attraverso progetti, certificazioni ed esperienza tecnica. Ogni sezione rappresenta una tappa nel mio continuo percorso di apprendimento.",
+    "tabs": {
+      "projects": "Progetti",
+      "certificates": "Certificati",
+      "techStack": "Stack Tecnologico"
+    }
+  },
+  "Projects": {
     "viewDemo": "Visualizza Demo",
     "viewDetails": "Visualizza Dettagli",
     "projects": [
@@ -56,6 +63,54 @@
         "description": "Un'app di streaming video per intrattenimento facile e personale, tutto quello che ami guardare",
         "demo": "https://watchit-1.onrender.com/",
         "image": "/projects/watchit.png"
+      }
+    ]
+  },
+  "TechStack": {
+    "technologies": [
+      { "name": "HTML5" },
+      { "name": "CSS3" },
+      { "name": "JavaScript" },
+      { "name": "TypeScript" },
+      { "name": "React" },
+      { "name": "Next.js" },
+      { "name": "Tailwind" },
+      { "name": "Node.js" },
+      { "name": ".NET" },
+      { "name": "C#" },
+      { "name": "SQL Server" },
+      { "name": "PostgreSQL" },
+      { "name": "MongoDB" },
+      { "name": "Azure" },
+      { "name": "Docker" },
+      { "name": "Git" },
+      { "name": "React Native" },
+      { "name": "MAUI" }
+    ]
+  },
+  "Certificates": {
+    "viewCertificate": "Visualizza Certificato",
+    "certificates": [
+      {
+        "id": 1,
+        "title": "Azure Fundamentals",
+        "issuer": "Microsoft",
+        "date": "2024",
+        "link": "#"
+      },
+      {
+        "id": 2,
+        "title": "Full Stack Web Development",
+        "issuer": "Udemy",
+        "date": "2023",
+        "link": "#"
+      },
+      {
+        "id": 3,
+        "title": "Advanced React Patterns",
+        "issuer": "Frontend Masters",
+        "date": "2023",
+        "link": "#"
       }
     ]
   },

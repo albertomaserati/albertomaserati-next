@@ -1,19 +1,22 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
+import Projects from './Projects';
+import TechStack from './TechStack';
+import Certificates from './Certificates';
 
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  demo: string;
-  image: string;
-}
+type TabType = 'projects' | 'certificates' | 'techstack';
 
 export default function Portfolio() {
   const t = useTranslations('Portfolio');
-  const projects = t.raw('projects') as Project[];
+  const [activeTab, setActiveTab] = useState<TabType>('projects');
+
+  const tabs = [
+    { id: 'projects' as TabType, icon: '<>', label: t('tabs.projects') },
+    { id: 'certificates' as TabType, icon: '🎓', label: t('tabs.certificates') },
+    { id: 'techstack' as TabType, icon: '⚙️', label: t('tabs.techStack') },
+  ];
 
   return (
     <section
@@ -22,7 +25,7 @@ export default function Portfolio() {
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold font-josefin mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold font-josefin mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             {t('title')}
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -30,50 +33,31 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="group rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-900 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-            >
-              {/* Project Image */}
-              <div className="relative h-48 bg-gray-200 dark:bg-gray-800 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-primary to-secondary opacity-80 flex items-center justify-center group-hover:opacity-90 transition-opacity">
-                  <span className="text-white font-josefin text-lg font-semibold">
-                    {project.title}
-                  </span>
-                </div>
-              </div>
+        {/* Tab Navigation */}
+        <div className="flex justify-center mb-12">
+          <div className="inline-flex rounded-lg bg-gray-100 dark:bg-gray-900 p-1 gap-1">
+            {tabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 ${
+                  activeTab === tab.id
+                    ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg'
+                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'
+                }`}
+              >
+                <span className="text-xl">{tab.icon}</span>
+                <span>{tab.label}</span>
+              </button>
+            ))}
+          </div>
+        </div>
 
-              {/* Project Info */}
-              <div className="p-6 space-y-4">
-                <h3 className="text-xl font-bold font-josefin text-foreground">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                  {project.description}
-                </p>
-
-                {/* Action Buttons */}
-                <div className="flex gap-4 pt-4">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors font-medium text-sm"
-                  >
-                    {t('viewDemo')}
-                  </a>
-                  <a
-                    href="#"
-                    className="flex-1 inline-flex items-center justify-center px-4 py-2 rounded-lg border-2 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-medium text-sm"
-                  >
-                    {t('viewDetails')}
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
+        {/* Tab Content */}
+        <div className="min-h-[500px]">
+          {activeTab === 'projects' && <Projects />}
+          {activeTab === 'certificates' && <Certificates />}
+          {activeTab === 'techstack' && <TechStack />}
         </div>
       </div>
     </section>
