@@ -1,7 +1,74 @@
 {
   "HomePage": {
-    "getStarted": "Per iniziare modifica",
-    "save": "Salva e visualizza le tue modifice istantaneamente.",
     "logoCaption": "Appassionato di sviluppo software, sport e cucina"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "Chi Sono",
+    "portfolio": "Portfolio",
+    "contact": "Contatti"
+  },
+  "Hero": {
+    "title": "Full Stack Developer",
+    "subtitle": "Creo esperienze digitali fluide, scalabili e pensate per stupire",
+    "cta": "Visualizza il Mio Lavoro",
+    "linkedIn": "LinkedIn",
+    "github": "GitHub",
+    "instagram": "Instagram"
+  },
+  "About": {
+    "title": "Chi Sono",
+    "description": "Sono uno sviluppatore appassionato focalizzato sulla creazione di applicazioni web intelligenti e scalabili. Esploro continuamente nuove tecnologie per affinare le mie competenze e creare soluzioni innovative.",
+    "downloadCV": "Scarica CV",
+    "projects": "Progetti",
+    "projectsCount": "4",
+    "projectsLabel": "Progetti Totali",
+    "certificates": "Certificati",
+    "certificatesCount": "3",
+    "certificatesLabel": "Competenze Professionali",
+    "experience": "Esperienza",
+    "experienceCount": "3+",
+    "experienceLabel": "Anni di Apprendimento"
+  },
+  "Portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Esplora il mio percorso attraverso progetti ed esperienza tecnica",
+    "viewDemo": "Visualizza Demo",
+    "viewDetails": "Visualizza Dettagli",
+    "projects": [
+      {
+        "id": 1,
+        "title": "IntervueAI",
+        "description": "Interviste simulate in tempo reale con AI, senza moduli o clic, conversazioni naturali e personalizzate",
+        "demo": "https://intervueai-io.vercel.app/",
+        "image": "/projects/intervueai.png"
+      },
+      {
+        "id": 2,
+        "title": "Blendy",
+        "description": "Un'app sociale per connettersi in tempo reale, accedi con un click, condividi momenti e post istantaneamente",
+        "demo": "https://blendy-download.vercel.app/",
+        "image": "/projects/blendy.png"
+      },
+      {
+        "id": 3,
+        "title": "WATCHit",
+        "description": "Un'app di streaming video per intrattenimento facile e personale, tutto quello che ami guardare",
+        "demo": "https://watchit-1.onrender.com/",
+        "image": "/projects/watchit.png"
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Contattami",
+    "subtitle": "Hai una domanda? Inviami un messaggio e parliamone",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "send": "Invia Messaggio",
+    "connectLinkedIn": "Connettiamoci su LinkedIn",
+    "followInstagram": "Instagram @alright.abhi",
+    "followGithub": "Github @AbhishekGanvir",
+    "copyright": "© 2025 - Tutti i Diritti Riservati"
   }
 }
