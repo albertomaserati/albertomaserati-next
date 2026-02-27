@@ -130,7 +130,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://github.com"
+                href="https://github.com/albertomaserati"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 rounded-lg bg-white dark:bg-gray-900 hover:shadow-lg transition-shadow hover:-translate-y-1"
