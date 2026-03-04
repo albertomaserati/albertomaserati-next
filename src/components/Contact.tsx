@@ -114,7 +114,7 @@ export default function Contact() {
           <div className="space-y-6 flex flex-col justify-center">
             <div className="space-y-4">
               <h3 className="text-xl font-bold font-josefin">
-                Connect With Me
+                {t('connectWithMe')}
               </h3>
 
               <a
