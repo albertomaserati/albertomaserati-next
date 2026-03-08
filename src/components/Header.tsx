@@ -29,9 +29,9 @@ export default function Header() {
               alt="Alberto Maserati"
               width={32}
               height={32}
-              
+              className="flex-shrink-0"
             />
-            <span className="font-josefin font-bold text-lg hidden sm:inline">Alberto Maserati</span>
+            <span className="font-josefin font-bold text-lg hidden sm:inline leading-none">Alberto Maserati</span>
           </Link>
 
           {/* Desktop Navigation */}
