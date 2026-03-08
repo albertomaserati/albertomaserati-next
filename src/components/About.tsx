@@ -38,7 +38,8 @@ export default function About() {
             </p>
 
             <a
-              href="#"
+              href="/AM-CV-Eng.pdf"
+              download="AM-CV-Eng.pdf"
               className="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors font-medium"
             >
               {t('downloadCV')}
