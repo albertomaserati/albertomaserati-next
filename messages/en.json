@@ -14,7 +14,8 @@
     "cta": "View My Work",
     "linkedIn": "LinkedIn",
     "github": "GitHub",
-    "instagram": "Instagram"
+    "instagram": "Instagram",
+    "typewriterTexts": ["Passionate software developer", "Engineering Unit Manager"]
   },
   "About": {
     "title": "About Me",

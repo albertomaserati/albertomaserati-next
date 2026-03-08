@@ -2,9 +2,11 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import TypewriterText from '@/components/TypewriterText';
 
 export default function Hero() {
   const t = useTranslations('Hero');
+  const typewriterTexts = t.raw('typewriterTexts') as string[];
 
   return (
     <section
@@ -16,8 +18,8 @@ export default function Hero() {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-josefin bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             {t('title')}
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            {t('subtitle')}
+          <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto">
+            <TypewriterText texts={typewriterTexts} />
           </p>
         </div>
 
