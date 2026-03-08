@@ -21,7 +21,7 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-black"
+      className="py-20 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
