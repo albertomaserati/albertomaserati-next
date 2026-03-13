@@ -9,17 +9,17 @@
     "contact": "Contatti"
   },
   "Hero": {
-    "title": "Software Engineer",
+    "title": "Software Engineering Manager",
     "subtitle": "Creo esperienze digitali fluide, scalabili e pensate per stupire",
     "cta": "Visualizza il Mio Lavoro",
     "linkedIn": "LinkedIn",
     "github": "GitHub",
     "instagram": "Instagram",
-    "typewriterTexts": ["Sviluppatore software appassionato", "Engineering Unit Manager"]
+    "typewriterTexts": ["Engineering Unit Manager", "Sviluppatore software appassionato", "Esperto in tecnologie Microsoft"]
   },
   "About": {
     "title": "Chi Sono",
-    "description": "Sono uno sviluppatore appassionato focalizzato sulla creazione di applicazioni web intelligenti e scalabili. Esploro continuamente nuove tecnologie per affinare le mie competenze e creare soluzioni innovative.",
+    "description": "Sono uno sviluppatore appassionato focalizzato sulla creazione di applicazioni web intelligenti e scalabili. Esploro continuamente nuove tecnologie perc affinare le mie competenze e creare soluzioni innovative.",
     "downloadCV": "Scarica CV",
     "projects": "Progetti",
     "projectsCount": "4",
@@ -41,7 +41,6 @@
     }
   },
   "Projects": {
-    "viewDemo": "Visualizza Demo",
     "viewDetails": "Visualizza Dettagli",
     "projects": [
       {

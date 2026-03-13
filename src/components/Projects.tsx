@@ -58,12 +58,6 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors font-medium text-sm"
                 >
-                  {t('viewDemo')}
-                </a>
-                <a
-                  href="#"
-                  className="flex-1 inline-flex items-center justify-center px-4 py-2 rounded-lg border-2 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-medium text-sm"
-                >
                   {t('viewDetails')}
                 </a>
               </div>

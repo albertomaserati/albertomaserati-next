@@ -9,13 +9,13 @@
     "contact": "Contact"
   },
   "Hero": {
-    "title": "Software Engineer",
+    "title": "Software Engineering Manager",
     "subtitle": "Enhancing digital experiences that are smooth, scalable, and made to impress",
     "cta": "View My Work",
     "linkedIn": "LinkedIn",
     "github": "GitHub",
     "instagram": "Instagram",
-    "typewriterTexts": ["Passionate software developer", "Engineering Unit Manager"]
+    "typewriterTexts": ["Engineering Unit Manager", "Passionate software developer", "MS technologies expert"]
   },
   "About": {
     "title": "About Me",
@@ -41,7 +41,6 @@
     }
   },
   "Projects": {
-    "viewDemo": "View Demo",
     "viewDetails": "View Details",
     "projects": [
       {
