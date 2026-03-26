@@ -14,7 +14,7 @@ export default function Portfolio() {
 
   const tabs = [
     { id: 'projects' as TabType, icon: '<>', label: t('tabs.projects') },
-    { id: 'certificates' as TabType, icon: '🎓', label: t('tabs.certificates') },
+    // { id: 'certificates' as TabType, icon: '🎓', label: t('tabs.certificates') },
     { id: 'techstack' as TabType, icon: '⚙️', label: t('tabs.techStack') },
   ];
 
@@ -56,7 +56,7 @@ export default function Portfolio() {
         {/* Tab Content */}
         <div className="min-h-[500px]">
           {activeTab === 'projects' && <Projects />}
-          {activeTab === 'certificates' && <Certificates />}
+          {/* {activeTab === 'certificates' && <Certificates />} */}
           {activeTab === 'techstack' && <TechStack />}
         </div>
       </div>
