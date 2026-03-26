@@ -33,9 +33,9 @@
   },
   "Portfolio": {
     "title": "Portfolio",
-    "subtitle": "Esplora il mio percorso attraverso progetti, certificazioni ed esperienza tecnica. Ogni sezione rappresenta una tappa nel mio continuo percorso di apprendimento.",
+    "subtitle": "Esplora il mio percorso attraverso esperienze, certificazioni ed esperienza tecnica. Ogni sezione rappresenta una tappa nel mio continuo percorso di apprendimento.",
     "tabs": {
-      "projects": "Progetti",
+      "projects": "Esperienze",
       "certificates": "Certificati",
       "techStack": "Stack Tecnologico"
     }
