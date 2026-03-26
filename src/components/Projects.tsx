@@ -1,24 +1,23 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
-
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  demo: string;
-  image: string;
-}
+import { Link } from '@/i18n/navigation';
+import { projects, type Locale } from '@/data/projects';
 
 export default function Projects() {
   const t = useTranslations('Projects');
-  const projects = t.raw('projects') as Project[];
+  const locale = useLocale() as Locale;
+  const localizedProjects = projects.map((project) => ({
+    ...project,
+    title: project.title[locale] ?? project.title.en,
+    description: project.description[locale] ?? project.description.en,
+  }));
 
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project) => (
+        {localizedProjects.map((project) => (
           <div
             key={project.id}
             className="group rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-900 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
@@ -52,14 +51,12 @@ export default function Projects() {
 
               {/* Action Buttons */}
               <div className="flex gap-4 pt-4">
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href={`/projects/${project.slug}`}
                   className="flex-1 inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors font-medium text-sm"
                 >
                   {t('viewDetails')}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

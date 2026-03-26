@@ -41,30 +41,14 @@
     }
   },
   "Projects": {
-    "viewDetails": "View Details",
-    "projects": [
-      {
-        "id": 1,
-        "title": "IntervueAI",
-        "description": "Real-time mock interviews with AI, no forms or clicks just natural, personalized conversations",
-        "demo": "https://intervueai-io.vercel.app/",
-        "image": "/projects/intervueai.png"
-      },
-      {
-        "id": 2,
-        "title": "Blendy",
-        "description": "A social app where you can connect in real-time, log in with one click, share moments and posts instantly",
-        "demo": "https://blendy-download.vercel.app/",
-        "image": "/projects/blendy.png"
-      },
-      {
-        "id": 3,
-        "title": "WATCHit",
-        "description": "A video streaming app made for easy, personal entertainment and everything you love to binge",
-        "demo": "https://watchit-1.onrender.com/",
-        "image": "/projects/watchit.png"
-      }
-    ]
+    "viewDetails": "View Details"
+  },
+  "ProjectPage": {
+    "backToProjects": "Back to projects",
+    "caseStudyLabel": "Case study",
+    "visitDemo": "Visit demo",
+    "techStack": "Tech stack",
+    "gallery": "Gallery"
   },
   "TechStack": {
     "technologies": [
