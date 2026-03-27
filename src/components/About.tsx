@@ -53,12 +53,18 @@ export default function About() {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="p-6 rounded-lg bg-white dark:bg-gray-900 shadow-lg hover:shadow-xl transition-shadow text-center"
+                className="min-h-[10rem] p-6 rounded-lg bg-white dark:bg-gray-900 shadow-lg hover:shadow-xl transition-shadow text-center flex flex-col"
               >
-                <div className="text-2xl sm:text-3xl font-bold font-josefin text-primary mb-2 leading-snug break-normal">
-                  {stat.count}
+                <div className="flex-1 flex items-center justify-center">
+                  <div
+                    className={`font-bold font-josefin text-primary leading-snug break-normal ${
+                      index === 2 ? 'text-4xl sm:text-6xl' : 'text-2xl sm:text-3xl'
+                    }`}
+                  >
+                    {stat.count}
+                  </div>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
+                <p className="text-sm text-gray-600 dark:text-gray-400 pt-4">
                   {stat.label}
                 </p>
               </div>
