@@ -22,14 +22,14 @@
     "description": "Attualmente ricopro il ruolo di Engineering Unit Manager per l'area Microsoft & Mobile Apps nella divisione DigiTech di Teoresi. Sono un ingegnere del software appassionato e con esperienza nello sviluppo di soluzioni fullstack, dall'analisi dei requisiti alla progettazione e implementazione. Esploro continuamente nuove tecnologie per affinare le mie competenze e creare soluzioni innovative.",
     "downloadCV": "Scarica CV",
     "projects": "Progetti",
-    "projectsCount": "4",
-    "projectsLabel": "Progetti Totali",
+    "projectsCount": "Engineering Unit Manager",
+    "projectsLabel": "Ruolo",
     "certificates": "Certificati",
-    "certificatesCount": "3",
-    "certificatesLabel": "Competenze Professionali",
+    "certificatesCount": "Fullstack Developer",
+    "certificatesLabel": "Profilo",
     "experience": "Esperienza",
-    "experienceCount": "3+",
-    "experienceLabel": "Anni di Apprendimento"
+    "experienceCount": "11+",
+    "experienceLabel": "Anni di Esperienza"
   },
   "Portfolio": {
     "title": "Portfolio",

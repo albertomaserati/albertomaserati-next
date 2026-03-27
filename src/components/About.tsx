@@ -30,30 +30,32 @@ export default function About() {
           {t('title')}
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="space-y-10">
           {/* Text Content */}
           <div className="space-y-6">
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
               {t('description')}
             </p>
 
-            <a
-              href="/AM-CV-Eng.pdf"
-              download="AM-CV-Eng.pdf"
-              className="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors font-medium"
-            >
-              {t('downloadCV')}
-            </a>
+            <div className="flex justify-center">
+              <a
+                href="/AM-CV-Eng.pdf"
+                download="AM-CV-Eng.pdf"
+                className="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors font-medium"
+              >
+                {t('downloadCV')}
+              </a>
+            </div>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {stats.map((stat, index) => (
               <div
                 key={index}
                 className="p-6 rounded-lg bg-white dark:bg-gray-900 shadow-lg hover:shadow-xl transition-shadow text-center"
               >
-                <div className="text-3xl sm:text-4xl font-bold font-josefin text-primary mb-2">
+                <div className="text-2xl sm:text-3xl font-bold font-josefin text-primary mb-2 leading-snug break-normal">
                   {stat.count}
                 </div>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
