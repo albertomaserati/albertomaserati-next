@@ -52,24 +52,28 @@
   },
   "TechStack": {
     "technologies": [
+      { "name": ".NET" },
+      { "name": "C#" },
+      { "name": "Azure" },
       { "name": "HTML5" },
       { "name": "CSS3" },
+      { "name": "Sass" },
       { "name": "JavaScript" },
       { "name": "TypeScript" },
       { "name": "React" },
       { "name": "Next.js" },
       { "name": "Tailwind" },
-      { "name": "Node.js" },
-      { "name": ".NET" },
-      { "name": "C#" },
       { "name": "SQL Server" },
       { "name": "PostgreSQL" },
-      { "name": "MongoDB" },
-      { "name": "Azure" },
+      { "name": "MySQL" },
+      { "name": "Node.js" },
+      { "name": "Python" },
       { "name": "Docker" },
       { "name": "Git" },
+      { "name": "GitHub" },
+      { "name": "BitBucket" },
       { "name": "React Native" },
-      { "name": "MAUI" }
+      { "name": "Postman" }
     ]
   },
   "Certificates": {
