@@ -24,7 +24,7 @@ export default function Footer() {
               Alberto Maserati
             </Link>
             <p className="mt-2 text-gray-400 text-sm">
-              Full Stack Developer | Building digital experiences
+              Engineering Unit Manager | Full Stack Developer
             </p>
           </div>
 

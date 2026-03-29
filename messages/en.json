@@ -33,9 +33,9 @@
   },
   "Portfolio": {
     "title": "Portfolio Showcase",
-    "subtitle": "Explore my journey through experiences, certifications, and technical expertise. Each section represents a milestone in my continuous learning path.",
+    "subtitle": "Explore my journey through experience, certifications, and technical expertise. Each section represents a milestone in my continuous learning path.",
     "tabs": {
-      "projects": "Experiences",
+      "projects": "Experience",
       "certificates": "Certificates",
       "techStack": "Tech Stack"
     }
