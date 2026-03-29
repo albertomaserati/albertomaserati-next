@@ -19,6 +19,9 @@ export default function Header() {
     { href: '#contact', label: t('contact') },
   ];
 
+  const getSectionHref = (hash: string) =>
+    pathname === '/' ? hash : `/${hash}`;
+
   return (
     <header className="fixed top-0 w-full bg-white/80 dark:bg-black/80 backdrop-blur-md z-50 shadow-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,13 +41,13 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                href={getSectionHref(link.href)}
                 className="text-foreground hover:text-primary transition-colors text-sm font-medium"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -79,14 +82,14 @@ export default function Header() {
         {isOpen && (
           <div className="md:hidden pb-4 space-y-2">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                href={getSectionHref(link.href)}
                 className="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-foreground transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
         )}
