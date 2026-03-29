@@ -2,9 +2,9 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { FiBriefcase, FiCpu } from 'react-icons/fi';
 import Projects from './Projects';
 import TechStack from './TechStack';
-import Certificates from './Certificates';
 
 type TabType = 'projects' | 'certificates' | 'techstack';
 
@@ -13,9 +13,9 @@ export default function Portfolio() {
   const [activeTab, setActiveTab] = useState<TabType>('projects');
 
   const tabs = [
-    { id: 'projects' as TabType, icon: '<>', label: t('tabs.projects') },
+    { id: 'projects' as TabType, icon: FiBriefcase, label: t('tabs.projects') },
     // { id: 'certificates' as TabType, icon: '🎓', label: t('tabs.certificates') },
-    { id: 'techstack' as TabType, icon: '⚙️', label: t('tabs.techStack') },
+    { id: 'techstack' as TabType, icon: FiCpu, label: t('tabs.techStack') },
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function Portfolio() {
                     : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'
                 }`}
               >
-                <span className="text-xl">{tab.icon}</span>
+                <tab.icon className="w-5 h-5" aria-hidden="true" />
                 <span>{tab.label}</span>
               </button>
             ))}
