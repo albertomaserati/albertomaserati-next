@@ -29,7 +29,7 @@ export async function generateMetadata({
 
   const locale = params.locale as Locale;
   const title = experience.title[locale] ?? experience.title.en;
-  const description = experience.description[locale] ?? experience.description.en;
+  const description = experience.longDescription[locale] ?? experience.longDescription.en;
 
   return {
     title: `${title} | Alberto Maserati`,
@@ -50,7 +50,11 @@ export default async function ExperiencePage({
   const locale = params.locale as Locale;
   const t = await getTranslations('ExperiencePage');
   const title = experience.title[locale] ?? experience.title.en;
-  const description = experience.description[locale] ?? experience.description.en;
+  const description =
+    experience.longDescription[locale] ??
+    experience.longDescription.en ??
+    experience.description[locale] ??
+    experience.description.en;
   const techStack = experience.techStack ?? [];
   const gallery = experience.gallery ?? [];
 
@@ -86,7 +90,7 @@ export default async function ExperiencePage({
               <h1 className="text-3xl md:text-5xl font-josefin font-bold text-foreground">
                 {title}
               </h1>
-              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed whitespace-pre-line">
                 {description}
               </p>
             </div>

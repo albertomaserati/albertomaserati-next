@@ -43,7 +43,7 @@ export default function Experience() {
               <h3 className="text-xl font-bold font-josefin text-foreground">
                 {experience.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed whitespace-pre-line">
                 {experience.description}
               </p>
 
