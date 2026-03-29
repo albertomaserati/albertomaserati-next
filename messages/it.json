@@ -115,15 +115,16 @@
   },
   "Contact": {
     "title": "Contattami",
-    "subtitle": "Hai una domanda? Inviami un messaggio e parliamone",
+    "subtitle": "Per collaborazioni o opportunita, contattami direttamente su LinkedIn o GitHub.",
     "name": "Nome",
     "email": "Email",
     "message": "Messaggio",
     "send": "Invia Messaggio",
-    "connectWithMe": "Connettiamoci",
-    "connectLinkedIn": "Connettiamoci su LinkedIn",
+    "connectWithMe": "Canali di contatto",
+    "connectLinkedIn": "Scrivimi su LinkedIn",
     "followInstagram": "Instagram @amase20",
-    "followGithub": "Github @albertomaserati",
+    "followGithub": "Vedi il mio GitHub",
+    "responseTime": "Di solito rispondo entro 24h",
     "copyright": "© 2026 - Alberto Maserati - Tutti i Diritti Riservati"
   }
 }
