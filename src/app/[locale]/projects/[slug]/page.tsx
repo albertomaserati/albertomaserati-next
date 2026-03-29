@@ -102,11 +102,11 @@ export default async function ProjectPage({
           </section>
 
           {techStack.length > 0 && (
-            <section className="space-y-4">
-              <h2 className="text-2xl font-josefin font-semibold text-foreground">
-                {t('techStack')}
+            <section className="flex flex-wrap items-center gap-3">
+              <h2 className="text-sm uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400">
+                {t('techStack')}:
               </h2>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2">
                 {techStack.map((tech) => (
                   <span
                     key={tech}

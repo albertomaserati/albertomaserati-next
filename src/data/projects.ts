@@ -25,6 +25,7 @@ export const projects: Project[] = [
     },
     demo: '#',
     image: '',
+    techStack: ['.NET', 'C#', 'Azure', 'PostgreSQL', 'Docker'],
     gallery: [],
   },
   {
@@ -40,6 +41,7 @@ export const projects: Project[] = [
     },
     demo: '#',
     image: '',
+    techStack: ['Power BI', 'SQL Server', 'TypeScript', 'React', 'Azure'],
     gallery: [],
   },
   {
@@ -55,6 +57,7 @@ export const projects: Project[] = [
     },
     demo: '#',
     image: '',
+    techStack: ['React Native', '.NET', 'REST API', 'Azure', 'Postman'],
     gallery: [],
   },
   {
@@ -70,6 +73,7 @@ export const projects: Project[] = [
     },
     demo: '#',
     image: '',
+    techStack: ['IoT', '.NET', 'Azure', 'Docker', 'React'],
     gallery: [],
   },
   {
@@ -85,6 +89,7 @@ export const projects: Project[] = [
     },
     demo: '#',
     image: '',
+    techStack: ['.NET', 'C#', 'Microservices', 'SQL Server', 'Azure'],
     gallery: [],
   },
   {
@@ -100,6 +105,7 @@ export const projects: Project[] = [
     },
     demo: '#',
     image: '',
+    techStack: ['Python', '.NET', 'PostgreSQL', 'Docker', 'Azure'],
     gallery: [],
   },
   {
@@ -115,6 +121,7 @@ export const projects: Project[] = [
     },
     demo: '#',
     image: '',
+    techStack: ['.NET', 'SQL Server', 'Docker', 'React', 'GitHub Actions'],
     gallery: [],
   },
   {
@@ -130,6 +137,7 @@ export const projects: Project[] = [
     },
     demo: '#',
     image: '',
+    techStack: ['.NET', 'TypeScript', 'React', 'PostgreSQL', 'Azure'],
     gallery: [],
   },
 ];
