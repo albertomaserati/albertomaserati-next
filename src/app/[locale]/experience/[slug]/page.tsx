@@ -72,14 +72,6 @@ export default async function ExperiencePage({
             >
               {t('backToExperience')}
             </Link>
-            <a
-              href={experience.demo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors font-medium text-sm"
-            >
-              {t('visitDemo')}
-            </a>
           </div>
 
           <section className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-start">
