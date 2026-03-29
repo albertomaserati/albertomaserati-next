@@ -6,13 +6,13 @@ import Footer from '@/components/Footer';
 import GradientBackground from '@/components/GradientBackground';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
-import { getProjectBySlug, projects, type Locale } from '@/data/projects';
+import { getExperienceBySlug, experiences, type Locale } from '@/data/experiences';
 
 export async function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
-    projects.map((project) => ({
+    experiences.map((experience) => ({
       locale,
-      slug: project.slug,
+      slug: experience.slug,
     }))
   );
 }
@@ -22,14 +22,14 @@ export async function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }) {
-  const project = getProjectBySlug(params.slug);
-  if (!project) {
+  const experience = getExperienceBySlug(params.slug);
+  if (!experience) {
     return {};
   }
 
   const locale = params.locale as Locale;
-  const title = project.title[locale] ?? project.title.en;
-  const description = project.description[locale] ?? project.description.en;
+  const title = experience.title[locale] ?? experience.title.en;
+  const description = experience.description[locale] ?? experience.description.en;
 
   return {
     title: `${title} | Alberto Maserati`,
@@ -37,22 +37,22 @@ export async function generateMetadata({
   };
 }
 
-export default async function ProjectPage({
+export default async function ExperiencePage({
   params,
 }: {
   params: { locale: string; slug: string };
 }) {
-  const project = getProjectBySlug(params.slug);
-  if (!project) {
+  const experience = getExperienceBySlug(params.slug);
+  if (!experience) {
     notFound();
   }
 
   const locale = params.locale as Locale;
-  const t = await getTranslations('ProjectPage');
-  const title = project.title[locale] ?? project.title.en;
-  const description = project.description[locale] ?? project.description.en;
-  const techStack = project.techStack ?? [];
-  const gallery = project.gallery ?? [];
+  const t = await getTranslations('ExperiencePage');
+  const title = experience.title[locale] ?? experience.title.en;
+  const description = experience.description[locale] ?? experience.description.en;
+  const techStack = experience.techStack ?? [];
+  const gallery = experience.gallery ?? [];
 
   return (
     <div className="min-h-screen">
@@ -66,10 +66,10 @@ export default async function ProjectPage({
               href="/#portfolio"
               className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
             >
-              {t('backToProjects')}
+              {t('backToExperience')}
             </Link>
             <a
-              href={project.demo}
+              href={experience.demo}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors font-medium text-sm"
@@ -91,9 +91,9 @@ export default async function ProjectPage({
               </p>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-gray-200 dark:bg-gray-800">
-              {project.image ? (
+              {experience.image ? (
                 <Image
-                  src={project.image}
+                  src={experience.image}
                   alt={title}
                   fill
                   className="object-contain p-6"

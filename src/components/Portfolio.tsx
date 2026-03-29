@@ -2,18 +2,20 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { FiBriefcase, FiCpu } from 'react-icons/fi';
+import { FiBriefcase, FiCode, FiCpu } from 'react-icons/fi';
+import Experience from './Experience';
 import Projects from './Projects';
 import TechStack from './TechStack';
 
-type TabType = 'projects' | 'certificates' | 'techstack';
+type TabType = 'projects' | 'experience' | 'certificates' | 'techstack';
 
 export default function Portfolio() {
   const t = useTranslations('Portfolio');
-  const [activeTab, setActiveTab] = useState<TabType>('projects');
+  const [activeTab, setActiveTab] = useState<TabType>('experience');
 
   const tabs = [
-    { id: 'projects' as TabType, icon: FiBriefcase, label: t('tabs.projects') },
+    { id: 'experience' as TabType, icon: FiBriefcase, label: t('tabs.experience') },
+    { id: 'projects' as TabType, icon: FiCode, label: t('tabs.projects') },
     // { id: 'certificates' as TabType, icon: '🎓', label: t('tabs.certificates') },
     { id: 'techstack' as TabType, icon: FiCpu, label: t('tabs.techStack') },
   ];
@@ -56,6 +58,7 @@ export default function Portfolio() {
         {/* Tab Content */}
         <div className="min-h-[500px]">
           {activeTab === 'projects' && <Projects />}
+          {activeTab === 'experience' && <Experience />}
           {/* {activeTab === 'certificates' && <Certificates />} */}
           {activeTab === 'techstack' && <TechStack />}
         </div>

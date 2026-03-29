@@ -33,9 +33,10 @@
   },
   "Portfolio": {
     "title": "Portfolio",
-    "subtitle": "Esplora il mio percorso attraverso esperienze, certificazioni ed esperienza tecnica. Ogni sezione rappresenta una tappa nel mio continuo percorso di apprendimento.",
+    "subtitle": "Esplora il mio percorso attraverso progetti, esperienze, certificazioni ed esperienza tecnica. Ogni sezione rappresenta una tappa nel mio continuo percorso di apprendimento.",
     "tabs": {
-      "projects": "Esperienze",
+      "projects": "Progetti",
+      "experience": "Esperienze",
       "certificates": "Certificati",
       "techStack": "Stack Tecnologico"
     }
@@ -43,10 +44,20 @@
   "Projects": {
     "viewDetails": "Visualizza Dettagli"
   },
+  "Experience": {
+    "viewDetails": "Visualizza Dettagli"
+  },
   "ProjectPage": {
     "backToProjects": "Torna ai progetti",
     "caseStudyLabel": "Caso studio",
     "visitDemo": "Visita la demo",
+    "techStack": "Tech stack",
+    "gallery": "Galleria"
+  },
+  "ExperiencePage": {
+    "backToExperience": "Torna alle esperienze",
+    "caseStudyLabel": "Percorso",
+    "visitDemo": "Visita link",
     "techStack": "Tech stack",
     "gallery": "Galleria"
   },
