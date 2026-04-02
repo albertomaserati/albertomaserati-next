@@ -51,6 +51,10 @@ export default async function ProjectPage({
   const t = await getTranslations('ProjectPage');
   const title = project.title[locale] ?? project.title.en;
   const description = project.description[locale] ?? project.description.en;
+  const longDescription =
+    project.longDescription?.[locale] ??
+    project.longDescription?.en ??
+    description;
   const techStack = project.techStack ?? [];
   const gallery = project.gallery ?? [];
 
@@ -78,8 +82,8 @@ export default async function ProjectPage({
               <h1 className="text-3xl md:text-5xl font-josefin font-bold text-foreground">
                 {title}
               </h1>
-              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                {description}
+              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed whitespace-pre-line">
+                {longDescription}
               </p>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-gray-200 dark:bg-gray-800">
