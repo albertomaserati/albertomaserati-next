@@ -45,12 +45,12 @@ export const projects: Project[] = [
       it: 'Dashboard di business intelligence per monitorare KPI e supportare decisioni data-driven in azienda.',
     },
     longDescription: {
-      en: 'Business intelligence dashboard to track KPIs and support data-driven decisions across the company.',
-      it: 'Dashboard di business intelligence per monitorare KPI e supportare decisioni data-driven in azienda.',
+      en: 'I coordinated the development of Power BI dashboards for the real estate industry, overseeing data integration from a PostgreSQL database to GCP and ensuring project deadlines and margins were met.\n\nThe work was conducted using an Agile approach using Azure DevOps, collaborating directly with the client to manage the backlog and continuously adapt priorities to emerging needs.',
+      it: 'Ho coordinato lo sviluppo di dashboard Power BI in ambito immobiliare, supervisionando l\'integrazione dei dati da un database PostgreSQL su GCP e garantendo il rispetto delle tempistiche e delle marginalità di progetto.\n\nIl lavoro è stato condotto in modalità Agile tramite Azure DevOps, collaborando direttamente con il cliente nella gestione del backlog e nell\'adattamento continuo delle priorità alle esigenze emergenti.',
     },
     demo: '#',
     image: '',
-    techStack: ['Power BI', 'SQL Server', 'TypeScript', 'React', 'Azure'],
+    techStack: ['Power BI', 'PostgreSQL', 'Azure DevOps'],
     gallery: [],
   },
   {
