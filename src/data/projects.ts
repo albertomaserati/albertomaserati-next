@@ -1,5 +1,7 @@
 export type Locale = 'en' | 'it';
 
+const PORTFOLIO_IMAGES_BASE = '/images/portfolio';
+
 export type Project = {
   id: number;
   slug: string;
@@ -169,9 +171,13 @@ export const projects: Project[] = [
       it: 'Ho sviluppato un\'applicazione desktop in WPF su .NET Framework 3.5 per il dipartimento Educational & Filters di Henkel Italia, successivamente distribuita in diverse filiali europee.\n\nIl tool consente al personale di eseguire test composti da domande su argomenti differenti, caricati dinamicamente da un file CSV a struttura fissa.\n\nQuesto approccio garantisce al cliente piena autonomia nella gestione dei contenuti — senza limiti sul numero di argomenti e domande — senza necessità di installazione o supporto tecnico.',
     },
     demo: '#',
-    image: '/images/henkel-logo.svg',
+    image: `${PORTFOLIO_IMAGES_BASE}/htc/henkel-logo.svg`,
     techStack: ['.NET', 'C#', 'WPF', 'MVVM'],
-    gallery: ['/images/1.png', '/images/2.png', '/images/3.png'],
+    gallery: [
+      `${PORTFOLIO_IMAGES_BASE}/htc/1.png`,
+      `${PORTFOLIO_IMAGES_BASE}/htc/2.png`,
+      `${PORTFOLIO_IMAGES_BASE}/htc/3.png`,
+    ],
   },
 ];
 
