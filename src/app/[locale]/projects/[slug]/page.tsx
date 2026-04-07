@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import GradientBackground from '@/components/GradientBackground';
+import GalleryLightbox from '@/components/GalleryLightbox';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { getProjectBySlug, projects, type Locale } from '@/data/projects';
@@ -128,21 +129,7 @@ export default async function ProjectPage({
               <h2 className="text-2xl font-josefin font-semibold text-foreground">
                 {t('gallery')}
               </h2>
-              <div className="grid gap-6 md:grid-cols-2">
-                {gallery.map((image, index) => (
-                  <div
-                    key={`${image}-${index}`}
-                    className="relative aspect-video rounded-2xl overflow-hidden shadow-lg bg-gray-200 dark:bg-gray-800"
-                  >
-                    <Image
-                      src={image}
-                      alt={`${title} ${index + 1}`}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
+              <GalleryLightbox images={gallery} title={title} />
             </section>
           )}
         </div>
