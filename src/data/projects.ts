@@ -20,7 +20,7 @@ export const projects: Project[] = [
     slug: 'network-security-platform',
     title: {
       en: 'Network Security Platform',
-      it: 'Piattaforma di Network Security',
+      it: 'Piattaforma di etwork Security',
     },
     description: {
       en: 'Platform for centralized monitoring and security management of network infrastructures',
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     slug: 'company-wide-bi-dashboard',
     title: {
       en: 'Company-Wide BI Dashboard',
-      it: 'Dashboard BI Aziendale',
+      it: 'Dashboard BI aziendale',
     },
     description: {
       en: 'Power BI reports to track KPIs and support data-driven decisions across the company',
@@ -59,8 +59,8 @@ export const projects: Project[] = [
     id: 3,
     slug: 'energy-meter-mobile-app',
     title: {
-      en: 'Energy Meter Mobile App',
-      it: 'App Mobile Energy Meter',
+      en: 'Energy meter mobile app',
+      it: 'App mobile energy meter',
     },
     description: {
       en: 'Project management for the development of a mobile app for configuring and monitoring industrial energy metering devices via Bluetooth.',
@@ -79,8 +79,8 @@ export const projects: Project[] = [
     id: 4,
     slug: 'smart-building-platform',
     title: {
-      en: 'Smart Building Platform',
-      it: 'Piattaforma Smart Building',
+      en: 'Smart building platform',
+      it: 'Piattaforma smart building',
     },
     description: {
       en: 'Smart building platform for integrated monitoring of people flows and IoT-enabled environments',
@@ -99,8 +99,8 @@ export const projects: Project[] = [
     id: 5,
     slug: 'neobank-backend-development',
     title: {
-      en: 'Neobank Backend Development',
-      it: 'Sviluppo Backend Neobank',
+      en: 'Neobank backend development',
+      it: 'Sviluppo backend neobank',
     },description: {
       en: 'Backend development for a microservices-based fintech platform, following Domain-Driven Design and event-driven architecture.',
       it: 'Sviluppo backend per una piattaforma fintech a microservizi, seguendo principi di Domain-Driven Design e architettura event-driven.',
@@ -118,8 +118,8 @@ export const projects: Project[] = [
     id: 6,
     slug: 'credit-risk-platform-development',
     title: {
-      en: 'Credit Risk Platform Development',
-      it: 'Sviluppo Piattaforma Credit Risk',
+      en: 'Credit risk platform development',
+      it: 'Sviluppo piattaforma credit risk',
     },
     description: {
       en: 'Development of a risk computing platform for large-scale data ingestion, validation, and risk calculation',
@@ -138,20 +138,20 @@ export const projects: Project[] = [
     id: 7,
     slug: 'cutting-line-management',
     title: {
-      en: 'Cutting Line Management',
-      it: 'Gestione Linea di Taglio',
+      en: 'Cutting line management',
+      it: 'Gestione linea di taglio',
     },
     description: {
-      en: 'Software solution for planning, supervision and optimization of industrial cutting line operations.',
-      it: 'Soluzione software per pianificazione, supervisione e ottimizzazione delle operazioni di linea di taglio.',
+      en: 'Desktop application for managing and monitoring cutting systems in expanded polystyrene production plants.',
+      it: 'Applicazione desktop per la gestione e il monitoraggio di sistemi di taglio per impianti di produzione di polistirene espanso.',
     },
     longDescription: {
-      en: 'Software solution for planning, supervision and optimization of industrial cutting line operations.',
-      it: 'Soluzione software per pianificazione, supervisione e ottimizzazione delle operazioni di linea di taglio.',
+      en: 'I acted as tech lead for the development of a desktop application for an Italian company specializing in expanded polystyrene production plants.\n\nThe application allows operators to define cutting jobs, monitor their progress in real time, and manage errors detected during the production process.\n\nThe interface is also fully usable via touch screen. I actively contributed to development while coordinating the rest of the team, managing tasks and pull requests through an Azure DevOps Kanban board.',
+      it: 'Ho ricoperto il ruolo di tech lead per lo sviluppo di un\'applicazione desktop per un\'azienda italiana specializzata nella produzione di impianti per polistirene espanso.\n\nL\'applicazione consente agli operatori di definire i job di taglio, monitorarne l\'avanzamento in tempo reale e gestire eventuali errori rilevati durante il processo produttivo.\n\nL\'interfaccia è inoltre completamente utilizzabile tramite touch screen. Ho contribuito attivamente allo sviluppo coordinando parallelamente il resto del team, gestendo attività e pull request tramite una Kanban board su Azure DevOps.',
     },
     demo: '#',
     image: '',
-    techStack: ['.NET', 'SQL Server', 'Docker', 'React', 'GitHub Actions'],
+    techStack: ['.NET', 'WPF', 'C#', 'Azure DevOps'],
     gallery: [],
   },
   {
