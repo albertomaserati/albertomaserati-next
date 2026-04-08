@@ -63,12 +63,12 @@ export const projects: Project[] = [
       it: 'App Mobile Energy Meter',
     },
     description: {
-      en: 'Mobile application for reading, analysis and management of energy consumption data',
-      it: 'Applicazione mobile per lettura, analisi e gestione dei dati di consumo energetico',
+      en: 'Project management for the development of a mobile app for configuring and monitoring industrial energy metering devices via Bluetooth.',
+      it: 'Project management per lo sviluppo di un\'app mobile per la configurazione e il monitoraggio di dispositivi di misura energetica industriali tramite Bluetooth.',
     },
     longDescription: {
-      en: 'Mobile application for reading, analysis and management of energy consumption data.',
-      it: 'Applicazione mobile per lettura, analisi e gestione dei dati di consumo energetico.',
+      en: 'I managed the project for the development of a mobile app for configuring and monitoring industrial energy metering devices via Bluetooth.\n\nMy role covered the full project lifecycle: coordinating the execution of turnkey activities, defining technical specifications in cooperation with the client, managing change requests, and monitoring project costs and performance.\n\nThe app guides technicians through device commissioning, configuration, and energy data readings, and is available on both iOS and Android.',
+      it: 'Ho gestito il progetto per lo sviluppo di un\'app mobile per la configurazione e il monitoraggio di dispositivi di misura energetica industriali tramite Bluetooth.\n\nIl mio ruolo ha coperto l\'intero ciclo di vita del progetto: coordinamento delle attività chiavi in mano, definizione delle specifiche tecniche in cooperazione con il cliente, gestione delle change request e monitoraggio dei costi e delle performance di progetto.\n\nL\'app guida i tecnici attraverso la messa in servizio, la configurazione e la lettura dei dati energetici ed è disponibile su iOS e Android.',
     },
     demo: '#',
     image: '',
