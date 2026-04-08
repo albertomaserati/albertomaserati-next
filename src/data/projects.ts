@@ -101,18 +101,17 @@ export const projects: Project[] = [
     title: {
       en: 'Neobank Backend Development',
       it: 'Sviluppo Backend Neobank',
-    },
-    description: {
-      en: 'Backend development for neobank services with focus on scalability, reliability and integrations',
-      it: 'Sviluppo backend per servizi neobank con focus su scalabilita, affidabilita e integrazioni',
+    },description: {
+      en: 'Backend development for a microservices-based fintech platform, following Domain-Driven Design and event-driven architecture.',
+      it: 'Sviluppo backend per una piattaforma fintech a microservizi, seguendo principi di Domain-Driven Design e architettura event-driven.',
     },
     longDescription: {
-      en: 'Backend development for neobank services with focus on scalability, reliability and integrations.',
-      it: 'Sviluppo backend per servizi neobank con focus su scalabilita, affidabilita e integrazioni.',
+      en: 'I joined the Platform team at Flowe, contributing to the development of a microservices-based backend following Domain-Driven Design (DDD) principles and an event-driven architectural paradigm.\n\nThe team of around twenty people worked in a structured Agile environment with full Scrum ceremonies — sprint planning, sprint review, and sprint retrospective — at a corporate scale.\n\nThe codebase was managed via GitFlow with systematic code reviews among team members. Data persistence relied on both relational and non-relational databases, including Cosmos DB.',
+      it: 'Ho fatto parte del team Platform di Flowe, contribuendo allo sviluppo del backend orchestrato a microservizi secondo i principi del Domain-Driven Design (DDD) e un paradigma architetturale event-driven.\n\nIl team, composto da una ventina di persone, operava in un contesto Agile strutturato con cerimonie Scrum complete — sprint planning, sprint review e sprint retrospective — a livello corporate.\n\nIl codice era gestito tramite GitFlow con code review sistematiche tra i membri del team. Per la persistenza dei dati erano utilizzati database relazionali e non relazionali, tra cui Cosmos DB.',
     },
     demo: '#',
     image: '',
-    techStack: ['ASP.NET', 'C#', 'Microservices', 'Event-driven Arch', 'Dapper', 'SQL Server', 'Azure'],
+    techStack: ['ASP.NET', 'C#', 'Microservices', 'Event-driven Arch', 'Dapper', 'SQL Server', 'Cosmos DB', 'Azure'],
     gallery: [],
   },
   {
