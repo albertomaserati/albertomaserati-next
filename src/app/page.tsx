@@ -1,6 +1,6 @@
 // app/page.tsx
-import { redirect } from 'next/navigation';
-
+// Il middleware next-intl gestisce il redirect da / → /[locale]
+// Questa pagina non dovrebbe mai essere raggiunta, ma serve come fallback
 export default function RootPage() {
-  redirect('/en'); // il middleware next-intl intercetta e aggiusta la locale
+  return null;
 }
