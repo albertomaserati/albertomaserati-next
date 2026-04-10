@@ -10,15 +10,23 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-josefin: var(--font-josefin-sans)
+  --font-josefin: var(--font-josefin-sans);
+  
+  /* Brand colors */
+  --color-primary: #3d9970;
+  --color-primary-dark: #2a6867;
+  --color-secondary: #17365d;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --background: #0a0a0a; */
-    --background: #393939;
+    --background: #080c14;
     --foreground: #ededed;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

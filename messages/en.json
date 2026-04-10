@@ -1,7 +1,130 @@
 {
   "HomePage": {
-    "getStarted": "Get started by editing",
-    "save": "Save and see your changes instantly.",
     "logoCaption": "Passionate of software development, sports and cooking"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Software Engineering Manager",
+    "subtitle": "Enhancing digital experiences that are smooth, scalable, and made to impress",
+    "cta": "View My Work",
+    "linkedIn": "LinkedIn",
+    "github": "GitHub",
+    "instagram": "Instagram",
+    "typewriterTexts": ["Engineering Unit Manager", "Passionate software developer", "MS technologies expert"]
+  },
+  "About": {
+    "title": "About Me",
+    "description": "I currently hold the role of Engineering Unit Manager for the Microsoft & Mobile Apps area in Teoresi's DigiTech division. I am a passionate software engineer with experience developing full-stack solutions, from requirements analysis to design and implementation. I am continuously exploring new technologies to hone my skills and create innovative solutions.",
+    "downloadCV": "Download CV",
+    "projects": "Projects",
+    "projectsCount": "Engineering Unit Manager",
+    "projectsLabel": "Role",
+    "certificates": "Certificates",
+    "certificatesCount": "Fullstack Developer",
+    "certificatesLabel": "Profile",
+    "experience": "Experience",
+    "experienceCount": "11+",
+    "experienceLabel": "Years of Experience"
+  },
+  "Portfolio": {
+    "title": "Portfolio Showcase",
+    "subtitle": "Explore my journey through experience, projects and technical expertise. Each section represents a part of my continuous learning path.",
+    "tabs": {
+      "projects": "Projects",
+      "experience": "Experience",
+      "certificates": "Certificates",
+      "techStack": "Tech Stack"
+    }
+  },
+  "Projects": {
+    "viewDetails": "View Details"
+  },
+  "Experience": {
+    "viewDetails": "View Details"
+  },
+  "ProjectPage": {
+    "backToProjects": "Back to projects",
+    "caseStudyLabel": "Case study",
+    "visitDemo": "Visit demo",
+    "techStack": "Technologies used",
+    "gallery": "Gallery"
+  },
+  "ExperiencePage": {
+    "backToExperience": "Back to experience",
+    "caseStudyLabel": "Journey",
+    "visitDemo": "Visit link",
+    "techStack": "Tech stack",
+    "gallery": "Gallery"
+  },
+  "TechStack": {
+    "technologies": [
+      { "name": ".NET" },
+      { "name": "C#" },
+      { "name": "Azure" },
+      { "name": "HTML5" },
+      { "name": "CSS3" },
+      { "name": "Sass" },
+      { "name": "JavaScript" },
+      { "name": "TypeScript" },
+      { "name": "React" },
+      { "name": "Next.js" },
+      { "name": "Tailwind" },
+      { "name": "SQL Server" },
+      { "name": "PostgreSQL" },
+      { "name": "MySQL" },
+      { "name": "Node.js" },      
+      { "name": "Python" },      
+      { "name": "Docker" },
+      { "name": "Git" },
+      { "name": "GitHub" },
+      { "name": "BitBucket" },
+      { "name": "React Native" },
+      { "name": "Postman" }
+    ]
+  },
+  "Certificates": {
+    "viewCertificate": "View Certificate",
+    "certificates": [
+      {
+        "id": 1,
+        "title": "Azure Fundamentals",
+        "issuer": "Microsoft",
+        "date": "2024",
+        "link": "#"
+      },
+      {
+        "id": 2,
+        "title": "Full Stack Web Development",
+        "issuer": "Udemy",
+        "date": "2023",
+        "link": "#"
+      },
+      {
+        "id": 3,
+        "title": "Advanced React Patterns",
+        "issuer": "Frontend Masters",
+        "date": "2023",
+        "link": "#"
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Contact Me",
+    "subtitle": "For collaborations or opportunities, reach me directly on LinkedIn or GitHub.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "connectWithMe": "Contact channels",
+    "connectLinkedIn": "Message me on LinkedIn",
+    "followInstagram": "Instagram @amase20",
+    "followGithub": "View my GitHub",
+    "responseTime": "I usually reply within 24h",
+    "copyright": "© 2026 - Alberto Maserati - All Rights Reserved"
   }
 }
