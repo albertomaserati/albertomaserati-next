@@ -63,8 +63,8 @@ export const projects: Project[] = [
       it: 'App mobile energy meter',
     },
     description: {
-      en: 'Project management for the development of a mobile app for configuring and monitoring industrial energy metering devices via Bluetooth.',
-      it: 'Project management per lo sviluppo di un\'app mobile per la configurazione e il monitoraggio di dispositivi di misura energetica industriali tramite Bluetooth.',
+      en: 'Project management for the development of a mobile app for configuring and monitoring industrial energy metering devices via Bluetooth',
+      it: 'Project management per lo sviluppo di un\'app mobile per la configurazione e il monitoraggio di energy meter industriali tramite Bluetooth',
     },
     longDescription: {
       en: 'I managed the project for the development of a mobile app for configuring and monitoring industrial energy metering devices via Bluetooth.\n\nMy role covered the full project lifecycle: coordinating the execution of turnkey activities, defining technical specifications in cooperation with the client, managing change requests, and monitoring project costs and performance.\n\nThe app guides technicians through device commissioning, configuration, and energy data readings, and is available on both iOS and Android.',
@@ -150,7 +150,7 @@ export const projects: Project[] = [
       it: 'Ho ricoperto il ruolo di tech lead per lo sviluppo di un\'applicazione desktop per un\'azienda italiana specializzata nella produzione di impianti per polistirene espanso.\n\nL\'applicazione consente agli operatori di definire i job di taglio, monitorarne l\'avanzamento in tempo reale e gestire eventuali errori rilevati durante il processo produttivo.\n\nL\'interfaccia è inoltre completamente utilizzabile tramite touch screen. Ho contribuito attivamente allo sviluppo coordinando parallelamente il resto del team, gestendo attività e pull request tramite una Kanban board su Azure DevOps.',
     },
     demo: '#',
-    image: '',
+    image: `${PROJECTS_IMAGES_BASE}/cutterline/desktop.png`,
     techStack: ['.NET', 'WPF', 'C#', 'Azure DevOps'],
     gallery: [],
   },
