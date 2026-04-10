@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# albertomaserati.com
 
-## Getting Started
+The new version of my personal website. It's not a traditional brochure site — 
+given my current role, I didn't have a strict need for one — but I used it as 
+an opportunity to experiment with AI-assisted development.
 
-First, run the development server:
+🌐 Live at: [albertomaserati.com](https://albertomaserati.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js 15** (with Turbopack) — React framework for the frontend
+- **React 19** — UI library
+- **Tailwind CSS 4** — utility-first styling
+- **next-intl** — localization / i18n
+- **TypeScript** — static typing
+- Fonts and colour palette inherited from the previous version of the site
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Development Process
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I started by manually building the skeleton of the site — structure, 
+localization, libraries — then brought in AI tools to accelerate the rest.
 
-## Learn More
+- **Claude Code** — used to organize sections, define layout, and apply 
+  the visual style from the previous site
+- **GitHub Copilot** (via VS Code) — switched to this in the second phase 
+  of development
 
-To learn more about Next.js, take a look at the following resources:
+Both tools genuinely surprised me: the boost to development speed and the 
+quality of the generated code were better than expected.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A **GitHub Action** handles deployment to an Azure Static Web App, 
+reachable at `test.albertomaserati.com`.
 
-## Deploy on Vercel
+For production, I used the native **Vercel–GitHub integration** 
+(new to me, works seamlessly) — the site is now live there.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
