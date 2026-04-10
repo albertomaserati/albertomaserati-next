@@ -21,16 +21,17 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const project = getProjectBySlug(params.slug);
+  const { locale, slug } = await params;
+  const project = getProjectBySlug(slug);
   if (!project) {
     return {};
   }
 
-  const locale = params.locale as Locale;
-  const title = project.title[locale] ?? project.title.en;
-  const description = project.description[locale] ?? project.description.en;
+  const typedLocale = locale as Locale;
+  const title = project.title[typedLocale] ?? project.title.en;
+  const description = project.description[typedLocale] ?? project.description.en;
 
   return {
     title: `${title} | Alberto Maserati`,
@@ -41,19 +42,20 @@ export async function generateMetadata({
 export default async function ProjectPage({
   params,
 }: {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const project = getProjectBySlug(params.slug);
+  const { locale, slug } = await params;
+  const project = getProjectBySlug(slug);
   if (!project) {
     notFound();
   }
 
-  const locale = params.locale as Locale;
+  const typedLocale = locale as Locale;
   const t = await getTranslations('ProjectPage');
-  const title = project.title[locale] ?? project.title.en;
-  const description = project.description[locale] ?? project.description.en;
+  const title = project.title[typedLocale] ?? project.title.en;
+  const description = project.description[typedLocale] ?? project.description.en;
   const longDescription =
-    project.longDescription?.[locale] ??
+    project.longDescription?.[typedLocale] ??
     project.longDescription?.en ??
     description;
   const techStack = project.techStack ?? [];

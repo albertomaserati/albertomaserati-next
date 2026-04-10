@@ -2,7 +2,6 @@ import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '../../i18n/routing';
 import type { Metadata } from "next";
-import type { Author } from 'next/dist/lib/metadata/types/metadata-types';
 import { Geist, Geist_Mono, Josefin_Sans } from "next/font/google";
 import "../globals.css";
 

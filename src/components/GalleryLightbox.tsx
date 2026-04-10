@@ -27,14 +27,26 @@ export default function GalleryLightbox({ images, title }: GalleryLightboxProps)
     if (activeIndex === null) return;
 
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') closeLightbox();
-      if (event.key === 'ArrowLeft') showPrev();
-      if (event.key === 'ArrowRight') showNext();
+      if (event.key === 'Escape') {
+        setActiveIndex(null);
+      }
+      if (event.key === 'ArrowLeft') {
+        setActiveIndex((current) => {
+          if (current === null) return current;
+          return (current - 1 + images.length) % images.length;
+        });
+      }
+      if (event.key === 'ArrowRight') {
+        setActiveIndex((current) => {
+          if (current === null) return current;
+          return (current + 1) % images.length;
+        });
+      }
     };
 
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [activeIndex]);
+  }, [activeIndex, images.length]);
 
   return (
     <>

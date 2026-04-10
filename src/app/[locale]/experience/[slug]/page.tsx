@@ -21,16 +21,17 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const experience = getExperienceBySlug(params.slug);
+  const { locale, slug } = await params;
+  const experience = getExperienceBySlug(slug);
   if (!experience) {
     return {};
   }
 
-  const locale = params.locale as Locale;
-  const title = experience.title[locale] ?? experience.title.en;
-  const description = experience.longDescription[locale] ?? experience.longDescription.en;
+  const typedLocale = locale as Locale;
+  const title = experience.title[typedLocale] ?? experience.title.en;
+  const description = experience.longDescription[typedLocale] ?? experience.longDescription.en;
 
   return {
     title: `${title} | Alberto Maserati`,
@@ -41,20 +42,21 @@ export async function generateMetadata({
 export default async function ExperiencePage({
   params,
 }: {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const experience = getExperienceBySlug(params.slug);
+  const { locale, slug } = await params;
+  const experience = getExperienceBySlug(slug);
   if (!experience) {
     notFound();
   }
 
-  const locale = params.locale as Locale;
+  const typedLocale = locale as Locale;
   const t = await getTranslations('ExperiencePage');
-  const title = experience.title[locale] ?? experience.title.en;
+  const title = experience.title[typedLocale] ?? experience.title.en;
   const description =
-    experience.longDescription[locale] ??
+    experience.longDescription[typedLocale] ??
     experience.longDescription.en ??
-    experience.description[locale] ??
+    experience.description[typedLocale] ??
     experience.description.en;
   const techStack = experience.techStack ?? [];
   const gallery = experience.gallery ?? [];
