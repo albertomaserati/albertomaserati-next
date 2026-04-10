@@ -20,7 +20,7 @@ export const projects: Project[] = [
     slug: 'network-security-platform',
     title: {
       en: 'Network Security Platform',
-      it: 'Piattaforma di etwork Security',
+      it: 'Piattaforma di network Security',
     },
     description: {
       en: 'Platform for centralized monitoring and security management of network infrastructures',
