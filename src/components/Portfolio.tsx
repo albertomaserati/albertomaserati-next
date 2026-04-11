@@ -37,19 +37,19 @@ export default function Portfolio() {
 
         {/* Tab Navigation */}
         <div className="flex justify-center mb-12">
-          <div className="inline-flex rounded-lg bg-gray-100 dark:bg-gray-900 p-1 gap-1">
+          <div className="flex w-full sm:w-auto sm:inline-flex rounded-lg bg-gray-100 dark:bg-gray-900 p-1 gap-1">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 ${
+                className={`flex-1 sm:flex-none px-3 sm:px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center justify-center gap-2 ${
                   activeTab === tab.id
                     ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg'
                     : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'
                 }`}
               >
-                <tab.icon className="w-5 h-5" aria-hidden="true" />
-                <span>{tab.label}</span>
+                <tab.icon className="w-5 h-5 flex-shrink-0" aria-hidden="true" />
+                <span className="text-sm sm:text-base">{tab.label}</span>
               </button>
             ))}
           </div>
