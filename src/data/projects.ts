@@ -71,7 +71,7 @@ export const projects: Project[] = [
       it: 'Ho coordinato lo sviluppo di 4 report Power BI in ambito immobiliare (ciascuno articolato su 10/12 pagine), supervisionando l\'integrazione dei dati da un database PostgreSQL su GCP e garantendo il rispetto delle tempistiche e delle marginalità di progetto.\n\nIl lavoro è stato condotto in modalità Agile tramite Azure DevOps, collaborando direttamente con il cliente nella gestione del backlog e nell\'adattamento continuo delle priorità alle esigenze emergenti.',
     },
     demo: '#',
-    image: '',
+    image: `${PROJECTS_IMAGES_BASE}/pbi/powerbi.jpeg`,
     techStack: ['Power BI', 'PostgreSQL', 'Azure DevOps'],
     gallery: [],
   },
