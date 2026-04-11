@@ -49,7 +49,7 @@ export default function Portfolio() {
                 }`}
               >
                 <tab.icon className="w-5 h-5 flex-shrink-0" aria-hidden="true" />
-                <span className="text-sm sm:text-base">{tab.label}</span>
+                <span className="hidden sm:inline">{tab.label}</span>
               </button>
             ))}
           </div>
