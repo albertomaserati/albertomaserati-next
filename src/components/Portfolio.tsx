@@ -14,10 +14,10 @@ export default function Portfolio() {
   const [activeTab, setActiveTab] = useState<TabType>('experience');
 
   const tabs = [
-    { id: 'experience' as TabType, icon: FiBriefcase, label: t('tabs.experience') },
-    { id: 'projects' as TabType, icon: FiCode, label: t('tabs.projects') },
-    // { id: 'certificates' as TabType, icon: '🎓', label: t('tabs.certificates') },
-    { id: 'techstack' as TabType, icon: FiCpu, label: t('tabs.techStack') },
+    { id: 'experience' as TabType, icon: FiBriefcase, label: t('tabs.experience'), shortLabel: t('tabs.experience') },
+    { id: 'projects' as TabType, icon: FiCode, label: t('tabs.projects'), shortLabel: t('tabs.projects') },
+    // { id: 'certificates' as TabType, icon: '🎓', label: t('tabs.certificates'), shortLabel: t('tabs.certificates') },
+    { id: 'techstack' as TabType, icon: FiCpu, label: t('tabs.techStack'), shortLabel: 'Tech' },
   ];
 
   return (
@@ -49,7 +49,8 @@ export default function Portfolio() {
                 }`}
               >
                 <tab.icon className="w-5 h-5 flex-shrink-0" aria-hidden="true" />
-                <span className="text-sm sm:text-base">{tab.label}</span>
+                <span className="sm:hidden">{tab.shortLabel}</span>
+                <span className="hidden sm:inline">{tab.label}</span>
               </button>
             ))}
           </div>
