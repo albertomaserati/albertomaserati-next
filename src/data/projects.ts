@@ -16,11 +16,31 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: 9,
+    slug: 'albertomaserati',
+    title: {
+      en: 'Personal website',
+      it: 'Sito personale',
+    },
+    description: {
+      en: 'Website built with Next.js, showcasing my projects and experience with a focus on performance and accessibility.',
+      it: 'Sito web realizzato con Next.js, che mostra i miei progetti e la mia esperienza con un focus su prestazioni e accessibilità.',
+    },
+    longDescription: {
+      en: 'The new version of my personal website. It\'s not intended to be a traditional brochure site — given my current role, I didn\'t have a strict need for one — but I used it as an opportunity to experiment with AI-assisted development.\n\nI started by manually building the skeleton of the site — structure, localization, libraries — then brought in AI tools to accelerate the rest. Claude Code and GitHub Copilot  (via VS Code) genuinely surprised me: the boost to development speed and the quality of the generated code were better than expected.',
+      it: 'La nuova versione del mio sito personale. Non è pensata per essere un sito vetrina tradizionale — dato il mio ruolo attuale, non ne avevo un bisogno stringente — ma l\'ho utilizzata come opportunità per sperimentare lo sviluppo assistito dall\'IA.\n\nHo iniziato costruendo manualmente lo scheletro del sito — struttura, localizzazione, librerie — per poi portare dentro gli strumenti di IA per accelerare il resto. Claude Code e GitHub Copilot (via VS Code) mi hanno davvero sorpreso: il boost alla velocità di sviluppo e la qualità del codice generato sono stati migliori del previsto.',
+    },
+    demo: '#',
+    image: '/images/alberto-maserati-w-rgb.svg',
+    techStack: ['Next.js', 'Vercel', 'Tailwind CSS', 'GitHub', 'Claude', 'GitHub Copilot'],
+    gallery: [],
+  },
+  {
     id: 1,
     slug: 'network-security-platform',
     title: {
       en: 'Network Security Platform',
-      it: 'Piattaforma di etwork Security',
+      it: 'Piattaforma di network Security',
     },
     description: {
       en: 'Platform for centralized monitoring and security management of network infrastructures',
@@ -51,7 +71,7 @@ export const projects: Project[] = [
       it: 'Ho coordinato lo sviluppo di 4 report Power BI in ambito immobiliare (ciascuno articolato su 10/12 pagine), supervisionando l\'integrazione dei dati da un database PostgreSQL su GCP e garantendo il rispetto delle tempistiche e delle marginalità di progetto.\n\nIl lavoro è stato condotto in modalità Agile tramite Azure DevOps, collaborando direttamente con il cliente nella gestione del backlog e nell\'adattamento continuo delle priorità alle esigenze emergenti.',
     },
     demo: '#',
-    image: '',
+    image: `${PROJECTS_IMAGES_BASE}/pbi/powerbi.jpeg`,
     techStack: ['Power BI', 'PostgreSQL', 'Azure DevOps'],
     gallery: [],
   },
