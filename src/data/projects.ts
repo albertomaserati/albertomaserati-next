@@ -51,7 +51,7 @@ export const projects: Project[] = [
       it: 'Ho progettato e supervisionato la realizzazione di una piattaforma cloud per un’importante istituto di credito. Il progetto è stato condotto in modalità Agile a stretto contatto con il personale del cliente.\n\nIl sistema automatizza la gestione di specifiche richieste di rete valutandone l’applicabilità (es: apertura di porte sul firewall).\n\nIl sistema si integra con i sistemi di terze parti del cliente, come ServiceNow e Guardicore.\n\nPer gli amministratori è stato progettato anche un portale web che espone funzionalità di approvazione manuale e visualizzazione dello storico richieste.',
     },
     demo: '#',
-    image: '',
+    image: `${PROJECTS_IMAGES_BASE}/nsat/arch.svg`,
     techStack: ['.NET', 'C#', 'Azure', 'AzureSQL', 'Docker', 'React'],
     gallery: [],
   },
