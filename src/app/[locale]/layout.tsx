@@ -3,6 +3,7 @@ import {notFound} from 'next/navigation';
 import {routing} from '../../i18n/routing';
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Josefin_Sans } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import "../globals.css";
 
 const geistSans = Geist({
@@ -50,6 +51,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} ${josefinSans.variable} antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <GoogleAnalytics gaId="G-SETHV9B1SG" />
       </body>
     </html>
   );
