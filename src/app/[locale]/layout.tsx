@@ -4,6 +4,7 @@ import {routing} from '../../i18n/routing';
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Josefin_Sans } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google';
+import Script from 'next/script';
 import "../globals.css";
 
 const geistSans = Geist({
@@ -52,6 +53,16 @@ export default async function LocaleLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} ${josefinSans.variable} antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <GoogleAnalytics gaId="G-SETHV9B1SG" />
+        {/* Iubenda Cookie Solution */}
+        <Script
+          src="https://embeds.iubenda.com/widgets/e5e79d50-6669-496b-9431-0ef9a5ba0a80.js"
+          strategy="afterInteractive"
+        />
+        {/* Iubenda policy widget renderer */}
+        <Script
+          src="https://cdn.iubenda.com/iubenda.js"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );

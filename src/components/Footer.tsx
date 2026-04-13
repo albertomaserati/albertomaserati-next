@@ -73,8 +73,24 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-gray-400 text-sm">
           <p>{t('copyright')}</p>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.iubenda.com/privacy-policy/51843802"
+              className="iubenda-white iubenda-noiframe iubenda-embed hover:text-white transition-colors"
+              title="Privacy Policy"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://www.iubenda.com/privacy-policy/51843802/cookie-policy"
+              className="iubenda-white iubenda-noiframe iubenda-embed hover:text-white transition-colors"
+              title="Cookie Policy"
+            >
+              Cookie Policy
+            </a>
+          </div>
         </div>
       </div>
     </footer>
