@@ -89,7 +89,7 @@ export default async function ExperiencePage({
                 {description}
               </p>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-gray-200 dark:bg-gray-800">
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl bg-gray-200 dark:bg-gray-800">
               {experience.image ? (
                 <Image
                   src={experience.image}
