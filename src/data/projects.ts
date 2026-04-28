@@ -10,6 +10,7 @@ export type Project = {
   longDescription: Record<Locale, string>;
   demo: string;
   image: string;
+  imageFill?: boolean;
   techStack?: string[];
   gallery?: string[];
 };
@@ -72,6 +73,7 @@ export const projects: Project[] = [
     },
     demo: '#',
     image: `${PROJECTS_IMAGES_BASE}/pbi/powerbi.jpeg`,
+    imageFill: true,
     techStack: ['Power BI', 'PostgreSQL', 'Azure DevOps'],
     gallery: [],
   },
@@ -111,7 +113,8 @@ export const projects: Project[] = [
       it: 'Ho coordinato tutte le attività di sviluppo di IO.T Solutions, la piattaforma smart building del Gruppo Teoresi.\n\nIl prodotto principale, DINA (Dynamic & Interactive solution for Networked Assets), è pensato per i facility manager e consente il monitoraggio in tempo reale dei flussi di persone e la gestione degli accessi all\'interno di edifici intelligenti.\n\nHo gestito l\'intero ciclo di vita del progetto, dalla pianificazione degli sprint fino ai rilasci sugli store.',
     },
     demo: '#',
-    image: '',
+    image: `${PROJECTS_IMAGES_BASE}/dina/mob-desktop.jpg`,
+    imageFill: true,
     techStack: ['Java', 'Android', 'iOS', 'BitBucket', 'Jira', 'Azure', 'AKS', 'PostgreSQL'],
     gallery: [],
   },
@@ -171,6 +174,7 @@ export const projects: Project[] = [
     },
     demo: '#',
     image: `${PROJECTS_IMAGES_BASE}/cutterline/desktop.png`,
+    imageFill: true,
     techStack: ['.NET', 'WPF', 'C#', 'Azure DevOps'],
     gallery: [],
   },

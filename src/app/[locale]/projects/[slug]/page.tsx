@@ -95,7 +95,7 @@ export default async function ProjectPage({
                   src={project.image}
                   alt={title}
                   fill
-                  className="object-contain p-6"
+                  className={project.imageFill ? 'object-cover' : 'object-contain p-6'}
                   priority
                 />
               ) : (
